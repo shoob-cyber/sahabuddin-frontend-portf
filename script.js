@@ -112,3 +112,34 @@ window.addEventListener('scroll', () => {
     socialBar.classList.remove('show-socials');
   }
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the page from refreshing
+
+    const btn = document.getElementById('send-btn');
+    btn.innerHTML = 'Sending...'; // Changes button text while loading
+
+    // Replace these with your actual IDs from Step 1
+    const serviceID = 'service_c1chzna';
+    const templateID = 'template_sehknf8';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        // Success!
+        btn.innerHTML = 'Sent Successfully! ✓';
+        btn.classList.add('sent'); // Turns the button green using your CSS
+        this.reset(); // Clears the form
+        
+        // Optional: Reset button back to normal after 3 seconds
+        setTimeout(() => {
+            btn.innerHTML = 'Send Message <span>→</span>';
+            btn.classList.remove('sent');
+        }, 3000);
+        
+      }, (err) => {
+        // Error handling
+        btn.innerHTML = 'Error. Try Again.';
+        console.log(JSON.stringify(err));
+      });
+});
