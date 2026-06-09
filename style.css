@@ -74,7 +74,8 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  z-index: 150;
+  z-index: 9999;
+  max-width: 50px;
   
   /* Initial hidden state */
   opacity: 0;
