@@ -1116,3 +1116,18 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════
+   FIX MOBILE HORIZONTAL SCROLL OVERFLOW
+═══════════════════════════════════════════════════════ */
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* Force all sections to clip overflowing background orbs */
+#hero, #about, #projects, #skills, #contact, footer {
+  overflow-x: hidden;
+}
