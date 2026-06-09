@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Seikh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ── Intro Animation Overlay ── -->
+  <div class="intro-overlay">
+    <div class="intro-logo">Portfolio.</div>
+  </div>
+
+  <!-- ── Floating Social Bar ── -->
+  <div class="floating-socials">
+    <!-- GitHub -->
+    <a href="https://github.com/shoob-cyber" target="_blank" class="float-icon" aria-label="GitHub">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/seikhsahabuddin/" target="_blank" class="float-icon" aria-label="LinkedIn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </a>
+    <!-- Gmail -->
+    <a href="sahabuddin.seikh28@gmail.com" class="float-icon" aria-label="Gmail">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    </a>
+  </div>
+
+  <!-- ── Cursor ── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Portfolio<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="hire-btn">Let's Build</a></li>
+    </ul>
+    <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Front-End & Full-Stack</p>
+      <h1 class="hero-h1">I'm <span class="accent">Sahabuddin</span>. <span class="line2">Full-stack logic, front-end aesthetics.</span></h1>
+      <p class="hero-sub">
+       I build secure, high-performance web applications using the MERN stack. I bridge the gap between heavy backend architecture and clean, pixel-perfect user interfaces.
+      </p>
+      <a href="#contact" class="hero-cta">
+        Let's Talk Code
+        <span class="arrow">↓</span>
+      </a>
+      <div class="hero-socials">
+        <div class="divider"></div>
+        <!-- GitHub -->
+        <a href="https://github.com/shoob-cyber" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/seikhsahabuddin/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+        </a>
+        <!-- Twitter/X -->
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/shobu10" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- floating badges -->
+    <div class="hero-right">
+      <div class="badge-field">
+        <div class="float-badge badge-react">  <span class="dot"></span> React</div>
+        <div class="float-badge badge-js">     <span class="dot"></span> JavaScript</div>
+        <div class="float-badge badge-css">    <span class="dot"></span> CSS3</div>
+        <div class="float-badge badge-html">   <span class="dot"></span> HTML5</div>
+        <div class="float-badge badge-figma">  <span class="dot"></span> Figma</div>
+        <div class="float-badge badge-git">    <span class="dot"></span> Git</div>
+        <div class="float-badge badge-tailwind"><span class="dot"></span> Tailwind</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about">
+    <div class="about-card reveal">
+      <div class="avatar-wrap">SK</div>
+      <div class="about-content">
+        <p class="section-label">About Me</p>
+        <h2 class="about-name">Seikh Sahabuddin Mohammed</h2>
+        <p class="about-role">Full Stack Developer</p>
+        <p class="about-bio">
+          I'm a final-year CSE student at CHRIST University, Bengaluru, graduating May 2026. I build full-stack web apps, cross-platform mobile experiences, and security-driven systems. Currently interning as a Full Stack Developer at BagClues Exim — shipping real products used by real users.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Full Stack Dev</span>
+          <span class="tag">React Enthusiast</span>
+          <span class="tag">Security Curious</span>
+          <span class="tag">DSA Nerd</span>
+          <span class="tag">Esports Head</span>
+        </div>
+        <button class="know-more-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Know More <span>→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+ <section id="projects">
+    <div class="projects-header reveal">
+      <div>
+        <p class="section-label">Selected Work</p>
+        <h2 class="section-h2">Projects</h2>
+      </div>
+      <a href="#" class="view-all">View all <span>→</span></a>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal reveal-delay-1"
+           data-title="Resume Builder"
+           data-emoji="📄"
+           data-desc="A full-stack MERN resume builder featuring real-time preview as you type, dynamic section management, and NLP-based ATS keyword analysis using NLTK. Built with Vite for fast dev experience and Framer Motion for smooth UI transitions."
+           data-stack="React,Node.js,Express.js,MongoDB,Tailwind CSS,Framer Motion,Vite">
+        <div class="card-thumb">
+          <div class="card-thumb-inner p1">📝</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Resume Builder</h3>
+          <p class="card-teaser">MERN resume builder with real-time preview and AI-powered ATS analysis</p>
+          <div class="card-tags">
+            <span class="card-tag">React</span>
+            <span class="card-tag">Node.js</span>
+            <span class="card-tag">MongoDB</span>
+            <span class="card-tag">Framer Motion</span>
+          </div>
+          <div style="margin-top: 1.2rem; display: flex; gap: 1rem; font-size: 0.85rem; font-weight: 500;">
+        <a href="https://github.com/shoob-cyber/resume-builder" target="_blank" onclick="event.stopPropagation()" style="color: var(--text);">🐙 GitHub</a> 
+        </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2"
+           data-title="SecAutoTARA"
+           data-emoji="🔐"
+           data-desc="A modular OTA (Over-the-Air) simulation platform simulating the OEM → TCU → ECU chain for automotive cybersecurity testing — no physical hardware needed. Aligned with ISO/SAE 21434 standards. Includes an automated VAPT attack suite covering 8+ real-world scenarios including MITM, replay, rollback, DoS, and authentication bypass, with structured logging and AI-assisted report generation."
+           data-stack="Python,Flask,Automotive Cybersecurity,STRIDE,ISO/SAE 21434">
+        <div class="card-thumb">
+          <div class="card-thumb-inner p2">🛡️</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">SecAutoTARA</h3>
+          <p class="card-teaser">Automotive cybersecurity OTA simulation platform with automated VAPT suite</p>
+          <div class="card-tags">
+            <span class="card-tag">Python</span>
+            <span class="card-tag">Flask</span>
+            <span class="card-tag">Cybersecurity</span>
+          </div>
+          <div style="margin-top: 1.2rem; display: flex; gap: 1rem; font-size: 0.85rem; font-weight: 500;">
+        <a href="https://github.com/shoob-cyber/OTA" target="_blank" onclick="event.stopPropagation()" style="color: var(--text);">🐙 GitHub</a> 
+      </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3"
+           data-title="E-Commerce Cart Optimizer"
+           data-emoji="🛒"
+           data-desc="A TypeScript-first MERN e-commerce platform that applies Knapsack and Greedy algorithms to automatically maximize cart value within a user-defined budget. Features JWT authentication for secured routes, real-time cart recalculation on budget change, and a fully responsive UI built with Tailwind CSS."
+           data-stack="React,TypeScript,Node.js,Express.js,MongoDB,JWT">
+        <div class="card-thumb">
+          <div class="card-thumb-inner p3">💰</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">E-Commerce Cart Optimizer</h3>
+          <p class="card-teaser">DSA-powered MERN cart optimizer using Knapsack & Greedy algorithms</p>
+          <div class="card-tags">
+            <span class="card-tag">React</span>
+            <span class="card-tag">TypeScript</span>
+            <span class="card-tag">Node.js</span>
+          </div>
+          <div style="margin-top: 1.2rem; display: flex; gap: 1rem; font-size: 0.85rem; font-weight: 500;">
+        <a href="https://github.com/shoob-cyber/groceries-cart-optimizerr" target="_blank" onclick="event.stopPropagation()" style="color: var(--text);">🐙 GitHub</a> 
+        <a href="https://www.thela.icu/" target="_blank" onclick="event.stopPropagation()" style="color: var(--accent);">🔗 Live Demo</a>
+      </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-4"
+           data-title="Fourth Project Name Here"
+           data-emoji="🚀"
+           data-desc="Description for your 4th project goes here."
+           data-stack="React,TypeScript,Node.js,Express.js,MongoDB,JWT">
+        <div class="card-thumb">
+          <div class="card-thumb-inner p4">🚀</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">CineTrack</h3>
+          <p class="card-teaser">Teaser description for your fourth project</p>
+          <div class="card-tags">
+            <span class="card-tag">React</span>
+            <span class="card-tag">TypeScript</span>
+            <span class="card-tag">Node.js</span>
+          </div>
+          <div style="margin-top: 1.2rem; display: flex; gap: 1rem; font-size: 0.85rem; font-weight: 500;">
+        <a href="https://github.com/shoob-cyber/cine-tracker" target="_blank" onclick="event.stopPropagation()" style="color: var(--text);">🐙 GitHub</a> 
+        <a href="https://cine-tracker-six.vercel.app/" target="_blank" onclick="event.stopPropagation()" style="color: var(--accent);">🔗 Live Demo</a>
+      </div>
+        </div>
+      </div>
+
+    </div> </section>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal-emoji" id="modal-emoji"></div>
+      <h2 class="modal-title" id="modal-title"></h2>
+      <p class="modal-desc" id="modal-desc"></p>
+      <p class="modal-stack-label">Tech Stack</p>
+      <div class="modal-stack" id="modal-stack"></div>
+    </div>
+  </div>
+
+  <section id="skills">
+    <p class="section-label reveal">Toolbox</p>
+    <h2 class="section-h2 reveal">What I Work With</h2>
+    
+    <div style="margin-top: 3rem;">
+      <p style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem;">Frontend & Languages</p>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><div class="skill-icon">🟨</div><div class="skill-name">JavaScript</div></div>
+        <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">🔷</div><div class="skill-name">TypeScript</div></div>
+        <div class="skill-card reveal reveal-delay-2"><div class="skill-icon">⚛️</div><div class="skill-name">React.js</div></div>
+        <div class="skill-card reveal reveal-delay-3"><div class="skill-icon">📱</div><div class="skill-name">React Native</div></div>
+        <div class="skill-card reveal reveal-delay-4"><div class="skill-icon">💨</div><div class="skill-name">Tailwind CSS</div></div>
+        <div class="skill-card reveal"><div class="skill-icon">🌐</div><div class="skill-name">HTML / CSS</div></div>
+        <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">✨</div><div class="skill-name">Framer Motion</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 2.5rem;">
+      <p style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem;">Backend & Database</p>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><div class="skill-icon">📦</div><div class="skill-name">Node.js</div></div>
+        <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">🚀</div><div class="skill-name">Express.js</div></div>
+        <div class="skill-card reveal reveal-delay-2"><div class="skill-icon">🐍</div><div class="skill-name">Python / Flask</div></div>
+        <div class="skill-card reveal reveal-delay-3"><div class="skill-icon">☕</div><div class="skill-name">Core Java</div></div>
+        <div class="skill-card reveal reveal-delay-4"><div class="skill-icon">🍃</div><div class="skill-name">MongoDB</div></div>
+        <div class="skill-card reveal"><div class="skill-icon">📊</div><div class="skill-name">SQL</div></div>
+        <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">🔐</div><div class="skill-name">JWT Auth</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 2.5rem; margin-bottom: 2rem;">
+      <p style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem;">Cloud, DevOps & Tools</p>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><div class="skill-icon">☁️</div><div class="skill-name">AWS</div></div>
+        <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">🐳</div><div class="skill-name">Docker</div></div>
+        <div class="skill-card reveal reveal-delay-2"><div class="skill-icon">🐙</div><div class="skill-name">Git</div></div>
+        <div class="skill-card reveal reveal-delay-3"><div class="skill-icon">⚡</div><div class="skill-name">Vite</div></div>
+        <div class="skill-card reveal reveal-delay-4"><div class="skill-icon">🛒</div><div class="skill-name">WooCommerce</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="section-label reveal">Contact</p>
+      <h2 class="contact-h2 reveal">Let's Talk  <span style="color:var(--accent)">Code</span></h2>
+      <p class="contact-sub reveal">Have a project in mind? I'm always open to hearing new ideas.</p>
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about your project…"></textarea>
+        </div>
+        <button class="send-btn" id="send-btn">
+          Send Message <span>→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <nav class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">© 2026 <span>Seikh</span>. Designed to impress. Debugged to survive.</p>
+  </footer>
+
+  <!-- Link external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
