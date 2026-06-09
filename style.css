@@ -1053,3 +1053,66 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ─── RESPONSIVE ─────────────────────────────────────── */
+
+/* TABLETS & SMALL LAPTOPS (Under 860px) */
+@media (max-width: 860px) {
+  #hero {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-cta { margin: 0 auto; }
+  .hero-right { display: none; } /* Hides floating badges to let your image shine */
+
+  .about-card { grid-template-columns: 1fr; text-align: center; }
+  .avatar-wrap { margin: 0 auto; }
+  .tag-row { justify-content: center; }
+
+  /* Navbar */
+  .nav-links, .hire-btn { display: none; }
+  .nav-mobile-toggle { display: flex; }
+
+  /* Floating Socials */
+  .floating-socials { right: 1.5rem; bottom: 1.5rem; }
+  .floating-socials::after { display: none; }
+
+  /* Footer */
+  footer { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+}
+
+/* SMARTPHONES (Under 600px) */
+@media (max-width: 600px) {
+  /* Fix Grid Overflows */
+  .projects-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+  
+  /* Scale down massive text */
+  .hero-h1 { font-size: 2.2rem; }
+  .section-h2, .contact-h2 { font-size: 1.8rem; }
+  
+  /* Fix Modal & Form squishing */
+  .contact-form { padding: 1.5rem; }
+  .modal-box { padding: 1.5rem; max-height: 80vh; }
+  .modal-title { font-size: 1.3rem; }
+  
+  /* Stack modal links vertically on phones for easier tapping */
+  #modal-links-group { 
+    flex-direction: column; 
+    gap: 0.8rem; 
+    align-items: center; 
+  }
+  
+  /* Adjust section padding for smaller screens */
+  section { padding: 4rem 1.2rem; }
+}
+
+/* DISABLE ANIMATIONS FOR PREFERENCE */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
