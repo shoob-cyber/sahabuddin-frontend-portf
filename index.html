@@ -329,6 +329,17 @@
     </nav>
     <p class="footer-copy">© 2026 <span>Seikh</span>. Designed to impress. Debugged to survive.</p>
   </footer>
+  
+  <!-- EmailJS SDK Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/emailjs.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      // Replace "YOUR_PUBLIC_KEY" with the actual Public Key from your EmailJS Dashboard
+      emailjs.init({
+        publicKey: "x6xjGzHZMsKrRx_BW",
+      });
+    })();
+  </script>
 
   <!-- Link external JavaScript -->
   <script src="script.js"></script>
